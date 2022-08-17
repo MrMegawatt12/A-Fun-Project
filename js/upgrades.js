@@ -28,7 +28,7 @@ const UPGS = {
                 desc: `Increase Grass gain by <b class="green">10</b> per level.<br>This effect is <b class="green">doubled</b> every <b class="yellow">25</b> levels.`,
 
                 res: "grass",
-                icon: ['Curr/Grass'],
+                icon: ['Curr/AntiGrass'],
                 
                 cost: i => Decimal.pow(1,i).mul(10).ceil(),
                 bulk: i => i.div(10).max(1).log(1.000000000000001).floor().toNumber()+10,
