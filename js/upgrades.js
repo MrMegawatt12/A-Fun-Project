@@ -22,13 +22,13 @@ const UPGS = {
 
         ctn: [
             {
-                max: 10000,
+                max: inf,
 
                 title: "Grass Value..?",
                 desc: `Increase Grass gain by <b class="green">10</b> per level.<br>This effect is <b class="green">doubled</b> every <b class="yellow">25</b> levels.`,
 
                 res: "grass",
-                icon: ['Curr/Planet.png'],
+                icon: ['Curr/AntiGrass.png'],
                 
                 cost: i => Decimal.pow(1,i).mul(10).ceil(),
                 bulk: i => i.div(10).max(1).log(1.01).floor().toNumber()+10,
@@ -58,7 +58,7 @@ const UPGS = {
                 },
                 effDesc: x => "+"+format(x,0),
             },{
-                max: 250,
+                max: inf,
 
                 title: "Grow Speed",
                 desc: `Increase grass grow speed by <b class="green">10%</b> per level.`,
@@ -67,7 +67,7 @@ const UPGS = {
                 icon: ['Icons/Speed'],
                 
                 cost: i => Decimal.pow(1.75,i).mul(100).ceil(),
-                bulk: i => i.div(100).max(1).log(1.75).floor().toNumber()+1,
+                bulk: i => i.div(100).max(1).log(7.5).floor().toNumber()+1,
 
                 effect(i) {
                     let x = i/10+1
