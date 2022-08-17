@@ -22,7 +22,7 @@ const UPGS = {
 
         ctn: [
             {
-                max: 1000,
+                max: 10000,
 
                 title: "Grass Value..?",
                 desc: `Increase Grass gain by <b class="green">10</b> per level.<br>This effect is <b class="green">doubled</b> every <b class="yellow">25</b> levels.`,
@@ -31,7 +31,7 @@ const UPGS = {
                 icon: ['Curr/Grass'],
                 
                 cost: i => Decimal.pow(1,i).mul(10).ceil(),
-                bulk: i => i.div(10).max(1).log(1.2).floor().toNumber()+10,
+                bulk: i => i.div(10).max(1).log(1).floor().toNumber()+10,
 
                 effect(i) {
                     let x = Decimal.pow(2,Math.floor(i/25)).mul(i+10)
