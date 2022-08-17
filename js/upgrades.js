@@ -24,7 +24,7 @@ const UPGS = {
             {
                 max: 1000,
 
-                title: "Grass Value",
+                title: "Grass Value..?",
                 desc: `Increase Grass gain by <b class="green">1</b> per level.<br>This effect is <b class="green">doubled</b> every <b class="yellow">25</b> levels.`,
 
                 res: "grass",
