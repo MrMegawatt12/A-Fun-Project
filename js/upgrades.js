@@ -42,7 +42,7 @@ const UPGS = {
             },{
                 max: 100000,
 
-                title: "More Grass",
+                title: "Grass Capacity",
                 desc: `Increase grass cap by <b class="green">1</b> per level.`,
 
                 res: "grass",
@@ -97,7 +97,7 @@ const UPGS = {
                max: 10,
 
                 title: "Grass Speed II",
-                desc: `Increase grass grow speed by <b class="green">25%</b> per level.`,
+                desc: `Increase grass grow speed by <b class="green">10%</b> per level.`,
 
                 res: "grass",
                 icon: ['Icons/Speed'],
@@ -106,7 +106,7 @@ const UPGS = {
                 bulk: i => i.div(100).max(1).log(1.75).floor().toNumber()+1,
 
                 effect(i) {
-                    let x = i/25+2
+                    let x = i/10+1
 
                     return x
                 },
