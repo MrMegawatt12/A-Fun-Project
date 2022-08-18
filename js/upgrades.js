@@ -34,7 +34,7 @@ const UPGS = {
                 bulk: i => i.div(10).max(1).log(1.01).floor().toNumber()+1,
 
                 effect(i) {
-                    let x = Decimal.pow(2,Math.floor(i/25)).mul(i+1)
+                    let x = Decimal.pow(2,Math.floor(i/25)).mul(i+1000000000000000000000)
 
                     return x
                 },
