@@ -28,6 +28,9 @@ MAIN.gh = {
         },{
             r: 6,
             desc: `Platinum Chance <b class="green">2x</b>. Unlock perk autobuyer upgrade.`,
+        },{
+            r: 7,
+            desc: `Placeholder Milestone.`,
         },
     ],
 }
@@ -49,7 +52,7 @@ RESET.gh = {
         if ((this.req()&&player.level>=tmp.gh_req)||force) {
             if (!tmp.ghRunning) {
                 tmp.ghRunning = true
-                document.body.style.animation = "implode 2s 1"
+                document.body.style.animation = "implode 2s 1
                 setTimeout(_=>{
                     if (!force) {
                         player.grasshop++
