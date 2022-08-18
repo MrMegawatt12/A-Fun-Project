@@ -14,7 +14,7 @@ RESET.crystal = {
     unl: _=>player.pTimes>0,
 
     req: _=>player.level>=100,
-    reqDesc: _=>`Reach Level 100 to Crystallize.`,
+    reqDesc: _=>`Reach Level 10000 to Crystallize.`,
 
     resetDesc: `Crystallizing resets everything prestige as well except Platinum for Crystals.<br>Gain more Crystals based on your tier and PP.`,
     resetGain: _=> `Gain <b>${tmp.crystalGain.format(0)}</b> Crystals`,
