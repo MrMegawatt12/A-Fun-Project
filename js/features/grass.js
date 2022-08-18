@@ -1,4 +1,4 @@
-const G_SIZE = 30
+const G_SIZE = 15
 const G_RANGE = 50
 
 var mouse_pos = {x:0,y:0}
