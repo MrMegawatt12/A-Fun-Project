@@ -27,10 +27,7 @@ MAIN.gh = {
             desc: `Keep Crystallize challenges on Grasshop.`,
         },{
             r: 6,
-            desc: `Platinum Chance <b class="green">2x</b>. Unlock perk autobuyer upgrade.`,
-        },{
-            r: 7,
-            desc: `Placeholder Milestone.`,
+            desc: `Platinum Chance <b class="green">2x</b>. Unlock perk autobuyer upgrade.`, 
         },
     ],
 }
